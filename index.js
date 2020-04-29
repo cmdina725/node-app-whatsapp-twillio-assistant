@@ -5,7 +5,7 @@ const authToken = process.env.AUTH_TOKEN;
 const watsonAssistantID = process.env.ASSISTANT_ID;
 const apiKey = process.env.API_KEY;
 const urlAPI = process.env.URL;
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 
 const bodyParser = require('body-parser');
 const express = require('express');
