@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A whatspp bot that uses twilio",
   "engines": {
-    "node": "12.x"
+    "node": "10.16.3"
   },
   "main": "index.js",
   "scripts": {

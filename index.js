@@ -5,7 +5,7 @@ const authToken = process.env.AUTH_TOKEN;
 const watsonAssistantID = process.env.ASSISTANT_ID;
 const apiKey = process.env.API_KEY;
 const urlAPI = process.env.URL;
-const PORT = process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -92,6 +92,6 @@ app.post('/smssent', (req, res) => {
         });
 });
 
-app.listen(PORT, () => {
-    console.log('Example app listening on port 5000!');
+app.listen(port, () => {
+    console.log('Listening on *:', port);
 });
