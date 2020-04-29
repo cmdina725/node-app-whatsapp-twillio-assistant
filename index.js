@@ -5,7 +5,7 @@ const authToken = process.env.AUTH_TOKEN;
 const watsonAssistantID = process.env.ASSISTANT_ID;
 const apiKey = process.env.API_KEY;
 const urlAPI = process.env.URL;
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -38,6 +38,11 @@ const assistant = new AssistantV2({
         apikey: apiKey,
     }),
     url: urlAPI,
+});
+
+app.get('/', (req, res) => {
+    console.log('Node-app-sms working! [GET]');
+    res.send('Node-app-sms working!');
 });
 
 app.post('/smssent', (req, res) => {
@@ -88,5 +93,5 @@ app.post('/smssent', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('Example app listening on port 4000!');
+    console.log('Example app listening on port 5000!');
 });

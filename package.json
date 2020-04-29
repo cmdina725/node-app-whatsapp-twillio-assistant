@@ -24,6 +24,10 @@
     "ibm-watson": "^5.4.0",
     "twilio": "^3.40.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmdina725/node-app-whatsapp-twillio-assistant.git"
+  },
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
